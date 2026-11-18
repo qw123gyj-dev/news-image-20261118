@@ -8,14 +8,28 @@ one image that sums up the world news of Wednesday 18 November 2026.
 
 ## The image
 
-`entry.png` (1024 × 1024, 535,973 bytes) is a newspaper front page:
+`entry.png` (1024 × 1024, 960,542 bytes) is a newspaper front page:
 masthead with the date, one lead story, two second stories, four
-smaller stories — 7 stories, one day. It was produced with an AI
-image generator from a detailed prompt that named every headline and
-summary verbatim; the first generation came back with every word
-spelled correctly, so no regeneration was needed. The text was checked
-word by word against the sources below, then the image was resized to
-1024 × 1024 and saved as a 256-colour PNG to fit the 1 MiB gate.
+smaller stories — 7 stories, one day. It was built as a hybrid:
+
+- **Photos and paper are AI-generated** (photorealistic news-photo
+  style, no recognisable faces): a blank newspaper template whose
+  empty paper grain is the page background, plus seven photos — a
+  jet on the tarmac with Chinese and US flags, a satellite view of
+  the Persian Gulf, the US Capitol, a cyclone seen from space, the
+  US / Japan / India / Australia flags, stacked gold bars, and a
+  satellite view of the Gaza coast. The jet photo was pre-cropped
+  to the band holding the flags and the fuselage.
+- **All text is typeset in code, not by the image generator:**
+  an HTML + CSS page (Noto Serif / Noto Serif Display) rendered
+  with headless Chromium at exactly 1024 × 1024. Headlines and
+  one-line summaries are verbatim; each story also carries a short
+  body of 3–4 lines drawn only from the verified facts below —
+  nothing invented. The render was checked word by word at full
+  size, twice: round 1 overflowed the page (the date wrapped to
+  two lines) and the jet photo was cropped badly, so the layout
+  was tightened and the photo re-cropped; round 2 fits, with
+  every word correct and the footer visible.
 
 ## The program
 
